@@ -1,9 +1,13 @@
 <template>
   <v-app theme="customLightTheme" id="root">
     <v-row no-gutters>
-      <v-col cols="4" class="main-column pl-6 pr-16">
+      <v-col cols="12" sm="12" md="4" class="main-column pl-6 pr-16">
         <div class="py-8 d-flex justify-center">
-          <v-avatar color="primary" size="300">KNS</v-avatar>
+          <img
+            src="@/assets/kns.png"
+            alt="kns-image"
+            style="border-radius: 50%; max-width: 400px; min-width: 200px;"
+          />
         </div>
         <div class="d-flex align-center flex-column text-white">
           <h2>Kyrllan Nogueira de Souza</h2>
@@ -46,7 +50,7 @@
           </custom-section>
         </v-container>
       </v-col>
-      <v-col cols="8" class="second-column">
+      <v-col cols="12" sm="12" md="8" class="second-column">
         <v-container class="px-10">
           <custom-section :title="language.about.title">
             <template v-slot:content>
