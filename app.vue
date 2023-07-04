@@ -2,6 +2,18 @@
   <v-app theme="customLightTheme" id="root">
     <v-row no-gutters>
       <v-col cols="12" sm="12" md="4" class="main-column pl-6 pr-16">
+<!--         <v-tooltip text="Download pdf">
+          <template v-slot:activator="{props}">
+            <v-btn
+              v-bind="props"
+              class="ml-16"
+              size="x-small"
+              icon="mdi-file-download"
+              color="green"
+              @click="downloadPDF"
+            ></v-btn>
+          </template>
+        </v-tooltip> -->
         <div class="locale-btn">
           <div v-if="localeBtn == 'en-US'">
             <v-tooltip location="bottom" text="Alterar lingua">
