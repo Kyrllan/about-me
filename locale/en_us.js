@@ -2,19 +2,9 @@ const enUs = {
   about: {
     title: 'ABOUT ME',
     content: `
-    Curious and fascinated by technology since childhood. In 2010,
-    I started working in a civil engineering office as
-    designer. The opportunity provided me with a lot of learning.
-    I grew as a professional and a person, I developed my soft
-    skills. Above all, this journey gave me the conditions to start
-    my graduation in the Course of Analysis and Development of
-    Sistemas, in 2012, completed in 2014. After graduating, by choice
-    mine, I continued working in the engineering office, but always
-    looking to develop parallel projects in the area of ​​technology.
-    It was then that in 2019 the opportunity to work in a
-    software company, in the position of front end developer. From there
-    here I continue to be more and more fascinated by my work and
-    especially for the impact it generates on people's lives.
+    Curious and fascinated by technology since I was a child, my interest in the world of computing led me to join the field of civil engineering as a designer in 2010. During this experience, I acquired valuable knowledge and skills, both professional and personal, and developed my work skills in team and communication.
+    In 2014, I completed my graduation in the Systems Analysis and Development course at the University of Passo Fundo (UPF). During training, I deepened my theoretical and practical knowledge in information technology, acquiring essential skills to design, develop and implement efficient and functional software systems. I highlight my ability to analyze user needs and translate them into efficient technological solutions, in addition to my experience in developing web applications.
+    After graduation, I chose to continue working in the engineering office, but I was always looking for opportunities to develop parallel projects in the area of ​​technology. In 2019, an opportunity arose to join a software company as a front-end developer. Since then, I have devoted myself more and more to my work and I am fascinated by the impact it has on people's lives.
     `,
   },
   education: {
@@ -24,11 +14,9 @@ const enUs = {
         period: '2012 - 2015',
         title: 'Universidade de Passo Fundo (UPF)',
         content: `
-        Graduated in Systems Analysis and Development with the objective of qualifying myself
-        to analyze functional and non-functional product requirements, develop and
-        test software systems, according to design specifications,
-        considering the good practices of the information technology market and the
-        user needs.
+        Graduated in Systems Analysis and Development, with solid theoretical and practical knowledge in the area of ​​information technology. During the course, I acquired essential skills to design, develop and implement efficient and functional software systems.
+        With a practical and solution-oriented approach, I am able to analyze user needs and translate them into efficient technological solutions. I have experience in developing web applications.
+        In addition, I highlight my ability to work in a team, adaptability to new technologies and my passion for learning and keeping up with trends in the technology sector. I constantly seek to improve my technical skills and contribute to the success of the projects in which I am involved.
       `,
       },
     ],
@@ -37,50 +25,59 @@ const enUs = {
     title: 'WORKS EXPERIENCE',
     experiences: [
       {
-        period: '2010 - 2017',
-        title: 'Projesul Engenharia',
+        period: '2022 - at the moment',
+        title: 'JOIN tecnologia',
         content: `
-        Acting as a Designer position, main activities performed:
-        3D modeling of steel structure works, project creation
-        of approval, assembly projects and detailing of parts.
-        `
-      },
-      {
-        period: '2018 - 2019',
-        title: 'Aguilla desenhos',
-        content: `
-        Acting as a Designer position, main activities performed:
-        Estimate 3D modeling time in works in the budget phase, Fill in the form
-        work technique; Develop the 3D model of the work according to
-        with the information received, following the customer's standard and obeying the
-        internal criteria referring to quality standards; Run the 3D checklist;
-        Send the model to the 2D sector; Orient the 2D sectors and scan until the
-        completion of the work; Monitor the preparation of assembly diagrams with the main objective
-        to ensure that all the essential information for the assembly of the work
-        are present and in accordance with the customer's standard; Control and organize all technical information regarding the work being carried out
-        being modeled; Control the scope of supply of each work and ensure that it is
-        fully serviced;
-        Be responsible for the “Project History” file;
-        `
+        As a software developer with experience in Vue.js and Vuetify, I have participated in significant projects such as AlertaDis, Infohidro and Stormboard, in collaboration with Simepar.
+        In the AlertaDis project, I worked on the development of a natural disaster alert system, which aimed to provide real-time information on weather events and other risk situations for the population. I played a key role in implementing the user interface using Vue.js and Vuetify, creating interactive and responsive components to make it easier for users to interact with alert information.
+        In the Infohidro project, I participated in the development of a hydrological monitoring platform, which allowed access to data and information on river levels, rainfall and other hydrological variables. I used Vue.js and Vuetify to build the user interface, providing an intuitive and efficient experience for users to explore and interpret the hydrological data in a visually appealing way.
+        In the Stormboard project, I was responsible for developing an interactive web application for viewing weather information in real time. With Vue.js and Vuetify, I created a dynamic and responsive interface that allowed users to track weather patterns, view forecasts and receive storm alerts based on data provided by Simepar.
+        My experience with Vue.js and Vuetify has enabled me to create modern web applications with elegant and functional interfaces. I have solid skills in developing reusable components, managing state with Vuex, and integrating APIs to get and display real-time data. I always seek to update my knowledge and follow the latest trends in this area, in order to deliver quality technological solutions with a positive impact.
+        `,
+        links: [
+          {name: 'AlertaDis', link:'https://alertadis.simepar.br/' },
+          {name: 'InfoHidro', link:'https://infohidro.simepar.br/' },
+          {name: 'Stormboard', link:'https://stormboard.simepar.br/Login' }
+        ]
       },
       {
         period: '2020 - 2021',
         title: 'CGI - Consultoria gaúcha de informática',
         content: `
-        Acting as a Front-end developer, main activities performed:
-        Front-end development using VueJs + Vuetify; Carry out tests; Develop fixes;
-        Document the system; Document the system;
-        `
+        As a software developer at CGI, I had the opportunity to work on the development of two important projects: Consultores, an enterprise ERP system, and AdmRH, a solution for Human Resources management.
+        In the Consultores project, I used Vue.js and Vuetify to develop intuitive and functional user interfaces. Collaborated with the development team in the development of essential system modules. I used the advanced features of Vue.js, such as reusable components and state management with Vuex, to create an efficient user experience and facilitate interaction with the various functionalities of the system. In addition, I worked closely with the design team to ensure that the layout and design of the system was attractive and user-friendly.
+        In the AdmRH project, I focused on creating Human Resources management capabilities. Developed modules for employee management. I used Vue.js and Vuetify to create responsive and user-friendly interfaces, allowing users to effectively manage HR processes.
+        During my experience at CGI, I also participated in activities such as testing, bug fixing and documentation of developed systems. Collaborated as a team, following good agile development practices and working closely with other team members.
+        This experience allowed me to improve my skills as well as my understanding of software development, web application architecture and good coding practices. I acquired knowledge in the development of business systems and management solutions, gaining a broader view of the needs and challenges faced by companies.
+        `,
       },
       {
-        period: '2022 - at the moment',
-        title: 'JOIN tecnologia',
+        period: '2018 - 2019',
+        title: 'Aguilla desenhos',
         content: `
-        Acting as a Front-end engineer position, main activities performed:
-        Development of web systems using mainly VueJs + Vuetify;
-        `
+        As a Designer, I played a key role in the development of steel structure works projects. My main activities included:
+        Estimate the time required for 3D modeling in works during the budget phase, ensuring efficient and accurate planning;
+        Fill in technical sheets of the work, detailing all relevant information for the project;
+        Develop 3D models of works based on the information received, following the standards and requirements established by customers and meeting the company's internal quality criteria;
+        Run the 3D checklist, thoroughly checking each stage of the project to ensure compliance;
+        Send the model to the 2D drawing sectors, providing guidelines and directions for the completion of the work;
+        Monitor the preparation of assembly diagrams, ensuring the inclusion of all necessary information and in line with the customer's requirements;
+        Control and organize all technical information regarding the work in the modeling process, ensuring the availability of the necessary data throughout the project cycle;
+        Control the scope of supply of each work, ensuring that all deliveries are fully met;
+        Be responsible for maintaining a project history file, documenting all steps and changes made;
+        These activities required attention to detail, advanced technical skills in tools such as AutoCAD and Tecnometal, and the ability to work as a team, coordinating the sectors involved and ensuring the excellence and quality of projects. My dedication to following quality standards, as well as the organization and effective control of technical information, contributed to the success of the steel structure projects in which I was involved.
+        `,
       },
-    ]
+      {
+        period: '2010 - 2017',
+        title: 'Projesul Engenharia',
+        content: `
+        As a designer of works in metallic structures, my work was focused on the use of tools such as AutoCAD and Tecnometal to develop accurate and efficient projects. I was responsible for creating detailed 3D models and technical drawings of steel structures, following current specifications and standards.
+        Using AutoCAD, I was able to create detailed technical drawings and representations of structural components such as beams, columns and connections. With this, I contributed to guarantee the precision and safety of the designed structures. In addition, I used Tecnometal, a specific tool for the design of metallic structures, to optimize and streamline the process of modeling and detailing the parts.
+        During my work as a designer, I estimated the time needed for the 3D modeling of works in the budget phase, filled out technical sheets of the works, developed the 3D models according to the information received and followed the quality standards established by the clients and the company. I was also responsible for controlling and organizing the technical information related to the works, ensuring that all the essential information for assembly was present in the drawings and diagrams.
+        `,
+      },
+    ],
   },
   professionalSkills: {
     title: 'PROFESSIONAL SKILLS',
@@ -88,14 +85,14 @@ const enUs = {
       {name: 'VueJs', value: 90},
       {name: 'Nuxt', value: 80},
       {name: 'Vuetify', value: 90},
-      {name: 'Javascript', value: 80},
-      {name: 'Typescript', value: 40},
+      {name: 'Javascript', value: 90},
+      {name: 'Typescript', value: 60},
       {name: 'Git', value: 80},
-      {name: 'Leaflet', value: 80},
-      {name: 'OpenLayers', value: 80},
-      {name: 'Flutter', value: 20},
-      {name: 'Swift', value: 20},
-    ]
+      {name: 'Leaflet', value: 90},
+      {name: 'OpenLayers', value: 90},
+      {name: 'Flutter', value: 25},
+      {name: 'Swift', value: 25},
+    ],
   },
   personalSkills: {
     title: 'PERSONAL SKILLS',
@@ -107,16 +104,20 @@ const enUs = {
       {name: 'Team work', value: 95},
       {name: 'Positive attitude', value: 80},
       {name: 'Self confidence', value: 75},
-    ]
+    ],
   },
   contact: {
     title: 'CONTACT',
     contacts: [
       {name: 'Phone', value: '+55 54 99968-5661', icon: 'mdi-phone'},
       {name: 'Email', value: 'kyrllan@hotmail.com', icon: 'mdi-email'},
-      {name: 'Address', value: 'Irineu Ferlin, 256 - Marau/RS', icon: 'mdi-home'},
-    ]
-  }
+      {
+        name: 'Address',
+        value: 'Irineu Ferlin, 256 - Marau/RS',
+        icon: 'mdi-home',
+      },
+    ],
+  },
 };
 
-export default enUs
+export default enUs;

@@ -2,22 +2,61 @@
   <v-app theme="customLightTheme" id="root">
     <v-row no-gutters>
       <v-col cols="12" sm="12" md="4" class="main-column pl-6 pr-16">
-        <div class="py-8 d-flex justify-center">
+        <div class="locale-btn">
+          <div v-if="localeBtn == 'en-US'">
+            <v-tooltip location="bottom" text="Alterar lingua">
+              <template v-slot:activator="{props}">
+                <v-btn
+                  v-bind="props"
+                  icon
+                  size="x-small"
+                  @click="changeLanguage('pt-BR')"
+                >
+                  <img
+                    src="@/assets/br-flag.png"
+                    style="width: 32px; height: 32px"
+                    alt="usa-flag"
+                  />
+                </v-btn>
+              </template>
+            </v-tooltip>
+          </div>
+          <div v-if="localeBtn == 'pt-BR'">
+            <v-tooltip location="bottom" text="Change language">
+              <template v-slot:activator="{props}">
+                <v-btn
+                  v-bind="props"
+                  icon
+                  size="x-small"
+                  @click="changeLanguage('en-US')"
+                >
+                  <img
+                    src="@/assets/usa-flag.png"
+                    style="width: 32px; height: 32px"
+                    alt="usa-flag"
+                  />
+                </v-btn>
+              </template>
+            </v-tooltip>
+          </div>
+        </div>
+
+        <div class="py-6 d-flex justify-center">
           <img
             src="@/assets/kns.png"
             alt="kns-image"
-            style="border-radius: 50%; max-width: 400px; min-width: 200px;"
+            style="border-radius: 50%; max-width: 350px; min-width: 200px"
           />
         </div>
         <div class="d-flex align-center flex-column text-white">
-          <h2>Kyrllan Nogueira de Souza</h2>
+          <h2 style="text-align: center;">Kyrllan Nogueira de Souza</h2>
           <h3>Front End Engineer</h3>
         </div>
-        <v-container class="pt-10">
+        <v-container class="pt-14">
           <custom-section :title="language.professionalSkills.title">
             <template v-slot:content>
               <custom-skills
-                class="pt-2"
+                class="pt-3"
                 v-for="(skill, i) in language.professionalSkills.skills"
                 :key="i"
                 :title="skill.name"
@@ -25,10 +64,10 @@
               ></custom-skills>
             </template>
           </custom-section>
-          <custom-section class="pt-6" :title="language.personalSkills.title">
+          <custom-section class="pt-10" :title="language.personalSkills.title">
             <template v-slot:content>
               <custom-skills
-                class="pt-2"
+                class="pt-3"
                 v-for="(skill, i) in language.personalSkills.skills"
                 :key="i"
                 :title="skill.name"
@@ -36,10 +75,10 @@
               ></custom-skills>
             </template>
           </custom-section>
-          <custom-section class="pt-6" :title="language.contact.title">
+          <custom-section class="pt-10" :title="language.contact.title">
             <template v-slot:content>
               <custom-contact
-                class="pt-2"
+                class="pt-3"
                 v-for="(contact, i) in language.contact.contacts"
                 :key="i"
                 :icon="contact.icon"
@@ -80,74 +119,13 @@
                 :date="experienses.period"
                 :title="experienses.title"
                 :content="experienses.content"
+                :links="experienses.links"
               ></date-section>
             </template>
           </custom-section>
         </v-container>
       </v-col>
     </v-row>
-    <v-menu transition="slide-x-transition" location="end">
-      <template v-slot:activator="{props}">
-        <v-btn
-          class="config-btn"
-          icon="mdi-cog"
-          color="primary"
-          v-bind="props"
-        ></v-btn>
-      </template>
-      <div class="d-flex align-center">
-        <v-tooltip
-          location="bottom"
-          text="Alterar lingua"
-          v-if="localeBtn !== 'pt-BR'"
-        >
-          <template v-slot:activator="{props}">
-            <v-btn
-              v-bind="props"
-              class="ml-2"
-              icon
-              size="x-small"
-              @click="changeLanguage('pt-BR')"
-            >
-              <img
-                src="@/assets/br-flag.png"
-                style="width: 32px; height: 32px"
-                alt="br-flag"
-              />
-            </v-btn>
-          </template>
-        </v-tooltip>
-        <v-tooltip location="bottom" text="Change language" v-else>
-          <template v-slot:activator="{props}">
-            <v-btn
-              v-bind="props"
-              class="ml-2"
-              icon
-              size="x-small"
-              @click="changeLanguage('en-US')"
-            >
-              <img
-                src="@/assets/usa-flag.png"
-                style="width: 32px; height: 32px"
-                alt="usa-flag"
-              />
-            </v-btn>
-          </template>
-        </v-tooltip>
-        <v-tooltip text="Download pdf">
-          <template v-slot:activator="{props}">
-            <v-btn
-              v-bind="props"
-              class="ml-2"
-              size="x-small"
-              icon="mdi-file-download"
-              color="green"
-              @click="downloadPDF"
-            ></v-btn>
-          </template>
-        </v-tooltip>
-      </div>
-    </v-menu>
   </v-app>
 </template>
 
@@ -158,7 +136,7 @@ export default {
   setup() {
     const {$html2pdf} = useNuxtApp();
 
-    let localeBtn = 'pt-BR';
+    let localeBtn = ref("pt-BR");
     let language = ref(locale['pt-BR']);
 
     function changeLanguage(value) {
@@ -202,10 +180,9 @@ body {
   font-family: 'Poppins';
 }
 
-.config-btn {
-  position: fixed;
-  top: 16px;
-  left: 16px;
+.locale-btn{
+  position: absolute;
+  top: 8px;
 }
 
 .content {

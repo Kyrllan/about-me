@@ -9,6 +9,10 @@
     <div>
       <span class="content">{{ content }} </span>
     </div>
+    <div v-if="links">
+      <span class="title">Links: </span>
+      <a v-for="(obj, i) in links" :key="i" class="links" :href="obj.link">{{ obj.name }} </a>
+    </div>
   </div>
 </template>
 
@@ -26,6 +30,10 @@ export default defineComponent({
       default: () => "",
     },
     content: {
+      type: String,
+      default: () => "",
+    },
+    links: {
       type: String,
       default: () => "",
     },
@@ -57,4 +65,16 @@ export default defineComponent({
   font-size: 16px;
   color: rgb(var(--v-theme-secondary));
 }
+
+.links{
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgb(var(--v-theme-primary));
+  padding-top: 4px;
+  padding-left: 10px;
+}
 </style>
+
+
