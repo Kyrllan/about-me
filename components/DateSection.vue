@@ -9,7 +9,7 @@
     <div class="pt-2">
       <div class="content" v-html="content"></div>
     </div>
-    <div v-if="links">
+    <div v-if="links.length > 0">
       <span class="title">Links: </span>
       <a v-for="(obj, i) in links" :key="i" class="links" :href="obj.link">{{ obj.name }} </a>
     </div>
