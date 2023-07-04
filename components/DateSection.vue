@@ -6,8 +6,8 @@
     <div>
       <span class="title">{{ title }} </span>
     </div>
-    <div>
-      <span class="content">{{ content }} </span>
+    <div class="pt-2">
+      <div class="content" v-html="content"></div>
     </div>
     <div v-if="links">
       <span class="title">Links: </span>
@@ -34,8 +34,8 @@ export default defineComponent({
       default: () => "",
     },
     links: {
-      type: String,
-      default: () => "",
+      type: Array,
+      default: () => [],
     },
   },
 });

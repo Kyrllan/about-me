@@ -25,7 +25,7 @@
                   @click="changeLanguage('pt-BR')"
                 >
                   <img
-                    src="@/assets/br-flag.png"
+                    src="@/assets/usa-flag.png"
                     style="width: 32px; height: 32px"
                     alt="usa-flag"
                   />
@@ -43,7 +43,7 @@
                   @click="changeLanguage('en-US')"
                 >
                   <img
-                    src="@/assets/usa-flag.png"
+                    src="@/assets/br-flag.png"
                     style="width: 32px; height: 32px"
                     alt="usa-flag"
                   />
@@ -105,9 +105,7 @@
         <v-container class="px-10">
           <custom-section :title="language.about.title">
             <template v-slot:content>
-              <div class="pt-2 content">
-                {{ language.about.content }}
-              </div>
+              <div class="pt-2 content" v-html="language.about.content"></div>
             </template>
           </custom-section>
           <custom-section class="pt-8" :title="language.education.title">
