@@ -41,7 +41,7 @@ const enUs = {
         ],
       },
       {
-        period: '2020 - 2021',
+        period: '2020 - 2022',
         title: 'CGI - Consultoria gaúcha de informática',
         content: `
         <p>As a software developer at CGI, I had the opportunity to work on the development of two important projects: Consultores, an enterprise ERP system, and AdmRH, a solution for Human Resources management.</p></br>
@@ -52,7 +52,7 @@ const enUs = {
         `,
       },
       {
-        period: '2018 - 2019',
+        period: '2018 - 2020',
         title: 'Aguilla desenhos',
         content: `
         <p>As a Designer, I played a key role in the development of steel structure works projects. My main activities included:</p></br>
@@ -69,7 +69,7 @@ const enUs = {
         `,
       },
       {
-        period: '2010 - 2017',
+        period: '2010 - 2018',
         title: 'Projesul Engenharia',
         content: `
         <p>As a designer of works in metallic structures, my work was focused on the use of tools such as AutoCAD and Tecnometal to develop accurate and efficient projects. I was responsible for creating detailed 3D models and technical drawings of steel structures, following current specifications and standards.</p></br>

@@ -41,7 +41,7 @@ const ptBr = {
         ],
       },
       {
-        period: '2020 - 2021',
+        period: '2020 - 2022',
         title: 'CGI - Consultoria gaúcha de informática',
         content: `
         <p>Como desenvolvedor de software na CGI, tive a oportunidade de trabalhar no desenvolvimento de dois projetos importantes: Consultors, um sistema ERP empresarial, e AdmRH, uma solução para gestão de Recursos Humanos.</p></br>
@@ -52,7 +52,7 @@ const ptBr = {
         `,
       },
       {
-        period: '2018 - 2019',
+        period: '2018 - 2020',
         title: 'Aguilla desenhos',
         content: `
         <p>Como Projetista, desempenhei um papel fundamental no desenvolvimento de projetos de obras em estrutura metálica. Minhas principais atividades incluíram</p></br>
@@ -69,7 +69,7 @@ const ptBr = {
         `,
       },
       {
-        period: '2010 - 2017',
+        period: '2010 - 2018',
         title: 'Projesul Engenharia',
         content: `
         <p>Como projetista de obras em estrutura metálica, minha atuação foi focada no uso de ferramentas como AutoCAD e Tecnometal para desenvolver projetos precisos e eficientes. Fui responsável por criar modelos 3D detalhados e desenhos técnicos de estruturas metálicas, seguindo as especificações e normas vigentes.</p></br>
