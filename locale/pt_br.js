@@ -85,6 +85,8 @@ const ptBr = {
       {name: 'VueJs', value: 90},
       {name: 'Nuxt', value: 80},
       {name: 'Vuetify', value: 90},
+      {name: 'React', value: 60},
+      {name: 'Next', value: 60},
       {name: 'Javascript', value: 90},
       {name: 'Typescript', value: 60},
       {name: 'Git', value: 80},
