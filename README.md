@@ -5,4 +5,4 @@ Recursos e Tecnologias Utilizadas: Nuxt, Vuetify, Git, GitHub e Vercel
 O currículo é projetado para se adaptar a diferentes dispositivos, garantindo uma experiência de visualização otimizada em desktops, tablets e smartphones.
 É dividido em seções distintas, como Experiência Profissional, Educação ,Habilidades, Contatos e possui versões em Inglês e Português. 
 
-https://about-me-six-livid.vercel.app/
+Demo: https://about-me-six-livid.vercel.app/
