@@ -1,8 +1,8 @@
 <template>
   <v-app theme="customLightTheme" id="root">
-    <v-row no-gutters>
-      <v-col cols="12" sm="12" md="4" class="main-column pl-6 pr-16">
-<!--         <v-tooltip text="Download pdf">
+    <div class="container">
+      <div class="first-column">
+        <!-- <v-tooltip text="Download pdf">
           <template v-slot:activator="{props}">
             <v-btn
               v-bind="props"
@@ -17,7 +17,7 @@
         <div class="locale-btn">
           <div v-if="localeBtn == 'en-US'">
             <v-tooltip location="bottom" text="Alterar lingua">
-              <template v-slot:activator="{props}">
+              <template v-slot:activator="{ props }">
                 <v-btn
                   v-bind="props"
                   icon
@@ -35,7 +35,7 @@
           </div>
           <div v-if="localeBtn == 'pt-BR'">
             <v-tooltip location="bottom" text="Change language">
-              <template v-slot:activator="{props}">
+              <template v-slot:activator="{ props }">
                 <v-btn
                   v-bind="props"
                   icon
@@ -61,7 +61,7 @@
           />
         </div>
         <div class="d-flex align-center flex-column text-white">
-          <h2 style="text-align: center;">Kyrllan Nogueira de Souza</h2>
+          <h2 style="text-align: center">Kyrllan Nogueira de Souza</h2>
           <h3>Front End Engineer</h3>
         </div>
         <v-container class="pt-14">
@@ -100,8 +100,8 @@
             </template>
           </custom-section>
         </v-container>
-      </v-col>
-      <v-col cols="12" sm="12" md="8" class="second-column">
+      </div>
+      <div class="second-column">
         <v-container class="px-10">
           <custom-section :title="language.about.title">
             <template v-slot:content>
@@ -134,20 +134,20 @@
             </template>
           </custom-section>
         </v-container>
-      </v-col>
-    </v-row>
+      </div>
+    </div>
   </v-app>
 </template>
 
 <script>
-import {locale} from '@/locale/locale';
+import { locale } from "@/locale/locale";
 
 export default {
   setup() {
-    const {$html2pdf} = useNuxtApp();
+    const { $html2pdf } = useNuxtApp();
 
     let localeBtn = ref("pt-BR");
-    let language = ref(locale['pt-BR']);
+    let language = ref(locale["pt-BR"]);
 
     function changeLanguage(value) {
       this.localeBtn = value;
@@ -156,19 +156,19 @@ export default {
 
     function downloadPDF() {
       if (document) {
-        const element = document.getElementById('root');
+        const element = document.getElementById("root");
 
         // clone the element: https://stackoverflow.com/questions/60557116/html2pdf-wont-print-hidden-div-after-unhiding-it/60558415#60558415
         const clonedElement = element.cloneNode(true);
-        clonedElement.classList.remove('hidden');
-        clonedElement.classList.add('block');
+        clonedElement.classList.remove("hidden");
+        clonedElement.classList.add("block");
         // need to append to the document, otherwise the downloading doesn't start
         document.body.appendChild(clonedElement);
 
         // https://www.npmjs.com/package/html2pdf.js/v/0.9.0#options
         $html2pdf(clonedElement, {
-          filename: 'currículo.pdf',
-          image: {type: 'jpeg'},
+          filename: "currículo.pdf",
+          image: { type: "jpeg" },
           enableLinks: true,
         });
         clonedElement.remove();
@@ -187,23 +187,27 @@ export default {
 
 <style>
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
-.locale-btn{
+.locale-btn {
   position: absolute;
   top: 8px;
 }
 
 .content {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: italic;
   font-weight: 300;
   font-size: 16px;
   color: rgb(var(--v-theme-secondary));
 }
 
-.main-column {
+.container {
+  display: grid;
+}
+
+.first-column {
   clip-path: polygon(
     0 0,
     100% 0,
@@ -217,5 +221,53 @@ body {
     0 100%
   );
   background-color: rgb(var(--v-theme-secondary));
+  padding-left: 10rem;
+}
+
+.second-column {
+  padding-right: 10rem;
+}
+
+@media (min-width: 961px) {
+  .container {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .first-column {
+    padding-left: 10rem;
+    padding-right: 1rem;
+  }
+
+  .second-column {
+    padding-right: 10rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .first-column {
+    padding-left: 6rem;
+    padding-right: 1rem;
+  }
+
+  .second-column {
+    padding-right: 6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .first-column {
+    padding: 1rem;
+  }
+  .second-column {
+    padding: 0.5rem;
+  }
 }
 </style>

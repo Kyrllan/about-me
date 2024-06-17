@@ -1,6 +1,6 @@
 const enUs = {
   about: {
-    title: 'ABOUT ME',
+    title: "ABOUT ME",
     content: `
     <p>Curious and fascinated by technology since I was a child, my interest in the world of computing led me to join the field of civil engineering as a designer in 2010. During this experience, I acquired valuable knowledge and skills, both professional and personal, and developed my work skills in team and communication.</p></br>
     <p>In 2014, I completed my graduation in the Systems Analysis and Development course at the University of Passo Fundo (UPF). During training, I deepened my theoretical and practical knowledge in information technology, acquiring essential skills to design, develop and implement efficient and functional software systems. I highlight my ability to analyze user needs and translate them into efficient technological solutions, in addition to my experience in developing web applications.</p></br>
@@ -8,11 +8,11 @@ const enUs = {
     `,
   },
   education: {
-    title: 'EDUCATION AND QUALIFICATIONS',
+    title: "EDUCATION AND QUALIFICATIONS",
     qualifications: [
       {
-        period: '2012 - 2015',
-        title: 'Universidade de Passo Fundo (UPF)',
+        period: "2012 - 2015",
+        title: "Universidade de Passo Fundo (UPF)",
         content: `
         <p>Graduated in Systems Analysis and Development, with solid theoretical and practical knowledge in the area of ​​information technology. During the course, I acquired essential skills to design, develop and implement efficient and functional software systems.</p></br>
         <p>With a practical and solution-oriented approach, I am able to analyze user needs and translate them into efficient technological solutions. I have experience in developing web applications.</p></br>
@@ -22,11 +22,26 @@ const enUs = {
     ],
   },
   workExperience: {
-    title: 'WORKS EXPERIENCE',
+    title: "WORKS EXPERIENCE",
     experiences: [
       {
-        period: '2022 - at the moment',
-        title: 'JOIN tecnologia',
+        period: "2023 - at the moment",
+        title: "Codex Remote",
+        content: `
+        <p>In the Recooperar project, we developed a platform that improves the management of degraded or altered areas, facilitating the recovery or restoration of native Brazilian vegetation. I used Vue.js to create an intuitive and efficient interface, allowing users to visualize and manage environmental data in an integrated manner. Recooperar is integrated with the Geospatial Analysis and Environmental Information Monitoring Platform (Pamgia), centralizing environmental information of interest to Ibama and its partners. This integration allows the statistical and geospatial visualization of thematic data, offering active transparency and broad access to available information.</p></br>
+        <p>Recooperar contributes to the restoration of legally protected areas, such as conservation units, indigenous lands, and rural settlements, as well as degraded areas on private properties, encompassing all Brazilian biomes.</p></br>  
+        `,
+        links: [
+          { name: "Recooperar", link: "https://recooperar.ibama.gov.br/home" },
+          {
+            name: "Sobre",
+            link: "https://www.gov.br/secom/pt-br/assuntos/noticias/2024/04/nova-ferramenta-do-ibama-permite-criar-banco-de-dados-de-areas-degradadas-passiveis-de-recuperacao",
+          },
+        ],
+      },
+      {
+        period: "2022 - 2023",
+        title: "JOIN tecnologia",
         content: `
         <p> As a software developer with experience in Vue.js and Vuetify, I have participated in significant projects such as AlertaDis, Infohidro and Stormboard, in collaboration with Simepar.</p></br>
         <p>In the AlertaDis project, I worked on the development of a natural disaster alert system, which aimed to provide real-time information on weather events and other risk situations for the population. I played a key role in implementing the user interface using Vue.js and Vuetify, creating interactive and responsive components to make it easier for users to interact with alert information.</p></br>
@@ -35,14 +50,14 @@ const enUs = {
         <p>My experience with Vue.js and Vuetify has enabled me to create modern web applications with elegant and functional interfaces. I have solid skills in developing reusable components, managing state with Vuex, and integrating APIs to get and display real-time data. I always seek to update my knowledge and follow the latest trends in this area, in order to deliver quality technological solutions with a positive impact.</p></br>
         `,
         links: [
-          {name: 'AlertaDis', link: 'https://alertadis.simepar.br/'},
-          {name: 'InfoHidro', link: 'https://infohidro.simepar.br/'},
-          {name: 'Stormboard', link: 'https://stormboard.simepar.br/Login'},
+          { name: "AlertaDis", link: "https://alertadis.simepar.br/" },
+          { name: "InfoHidro", link: "https://infohidro.simepar.br/" },
+          { name: "Stormboard", link: "https://stormboard.simepar.br/Login" },
         ],
       },
       {
-        period: '2020 - 2022',
-        title: 'CGI - Consultoria gaúcha de informática',
+        period: "2020 - 2022",
+        title: "CGI - Consultoria gaúcha de informática",
         content: `
         <p>As a software developer at CGI, I had the opportunity to work on the development of two important projects: Consultores, an enterprise ERP system, and AdmRH, a solution for Human Resources management.</p></br>
         <p>In the Consultores project, I used Vue.js and Vuetify to develop intuitive and functional user interfaces. Collaborated with the development team in the development of essential system modules. I used the advanced features of Vue.js, such as reusable components and state management with Vuex, to create an efficient user experience and facilitate interaction with the various functionalities of the system. In addition, I worked closely with the design team to ensure that the layout and design of the system was attractive and user-friendly.</p></br>
@@ -52,8 +67,8 @@ const enUs = {
         `,
       },
       {
-        period: '2018 - 2020',
-        title: 'Aguilla desenhos',
+        period: "2018 - 2020",
+        title: "Aguilla desenhos",
         content: `
         <p>As a Designer, I played a key role in the development of steel structure works projects. My main activities included:</p></br>
         <p>Estimate the time required for 3D modeling in works during the budget phase, ensuring efficient and accurate planning;</p></br>
@@ -69,8 +84,8 @@ const enUs = {
         `,
       },
       {
-        period: '2010 - 2018',
-        title: 'Projesul Engenharia',
+        period: "2010 - 2018",
+        title: "Projesul Engenharia",
         content: `
         <p>As a designer of works in metallic structures, my work was focused on the use of tools such as AutoCAD and Tecnometal to develop accurate and efficient projects. I was responsible for creating detailed 3D models and technical drawings of steel structures, following current specifications and standards.</p></br>
         <p>Using AutoCAD, I was able to create detailed technical drawings and representations of structural components such as beams, columns and connections. With this, I contributed to guarantee the precision and safety of the designed structures. In addition, I used Tecnometal, a specific tool for the design of metallic structures, to optimize and streamline the process of modeling and detailing the parts.</p></br>
@@ -80,46 +95,48 @@ const enUs = {
     ],
   },
   professionalSkills: {
-    title: 'PROFESSIONAL SKILLS',
+    title: "PROFESSIONAL SKILLS",
     skills: [
-      {name: 'VueJs', value: 90},
-      {name: 'Nuxt', value: 80},
-      {name: 'Vuetify', value: 90},
-      {name: 'React', value: 60},
-      {name: 'Next', value: 60},
-      {name: 'Javascript', value: 90},
-      {name: 'Typescript', value: 60},
-      {name: 'Git', value: 80},
-      {name: 'Leaflet', value: 90},
-      {name: 'OpenLayers', value: 90},
-      {name: 'Flutter', value: 25},
-      {name: 'Swift', value: 25},
+      { name: "VueJs" },
+      { name: "Nuxt" },
+      { name: "Vuetify" },
+      { name: "React" },
+      { name: "Next" },
+      { name: "Adonis Js" },
+      { name: "Javascript" },
+      { name: "Typescript" },
+      { name: "Git" },
+      { name: "Leaflet" },
+      { name: "OpenLayers" },
+      { name: "ArcGIS" },
+      { name: "Flutter" },
+      { name: "Swift" },
     ],
   },
   personalSkills: {
-    title: 'PERSONAL SKILLS',
+    title: "PERSONAL SKILLS",
     skills: [
-      {name: 'Communication', value: 100},
-      {name: 'Leadership', value: 90},
-      {name: 'Time management', value: 90},
-      {name: 'Problems solution', value: 85},
-      {name: 'Flexibility', value: 100},
-      {name: 'Team work', value: 95},
-      {name: 'Positive attitude', value: 80},
-      {name: 'Self confidence', value: 75},
-      {name: 'Planning', value: 80},
-      {name: 'Persistence', value: 80},
+      { name: "Communication" },
+      { name: "Leadership" },
+      { name: "Time management" },
+      { name: "Problems solution" },
+      { name: "Flexibility" },
+      { name: "Team work" },
+      { name: "Positive attitude" },
+      { name: "Self confidence" },
+      { name: "Planning" },
+      { name: "Persistence" },
     ],
   },
   contact: {
-    title: 'CONTACT',
+    title: "CONTACT",
     contacts: [
-      {name: 'Phone', value: '+55 54 99968-5661', icon: 'mdi-phone'},
-      {name: 'Email', value: 'kyrllan@hotmail.com', icon: 'mdi-email'},
+      { name: "Phone", value: "+55 54 99968-5661", icon: "mdi-phone" },
+      { name: "Email", value: "kyrllan@hotmail.com", icon: "mdi-email" },
       {
-        name: 'Address',
-        value: 'Irineu Ferlin, 256 - Marau/RS',
-        icon: 'mdi-home',
+        name: "Address",
+        value: "Marau/RS - BRAZIL",
+        icon: "mdi-home",
       },
     ],
   },

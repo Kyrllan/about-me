@@ -1,6 +1,6 @@
 const ptBr = {
   about: {
-    title: 'SOBRE MIM',
+    title: "SOBRE MIM",
     content: `
     <p>Curioso e fascinado por tecnologia desde criança, meu interesse pelo mundo da informática me levou a ingressar na área de engenharia civil como projetista em 2010. Durante essa experiência, adquiri valiosos conhecimentos e habilidades, tanto profissionais quanto pessoais, e desenvolvi minhas capacidades de trabalho em equipe e comunicação.</p></br>
     <p>Em 2014, concluí minha graduação no curso de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF). Durante a formação, aprofundei meus conhecimentos teóricos e práticos em tecnologia da informação, adquirindo habilidades essenciais para projetar, desenvolver e implementar sistemas de software eficientes e funcionais. Destaco minha capacidade de analisar as necessidades dos usuários e traduzi-las em soluções tecnológicas eficientes, além da minha experiência no desenvolvimento de aplicações web.</p></br>
@@ -8,11 +8,11 @@ const ptBr = {
     `,
   },
   education: {
-    title: 'FORMAÇÃO E QUALIFICAÇÕES',
+    title: "FORMAÇÃO E QUALIFICAÇÕES",
     qualifications: [
       {
-        period: '2012 - 2015',
-        title: 'Universidade de Passo Fundo (UPF)',
+        period: "2012 - 2015",
+        title: "Universidade de Passo Fundo (UPF)",
         content: `
         <p>Formação em Análise e Desenvolvimento de Sistemas, com sólidos conhecimentos teóricos e práticos na área de tecnologia da informação. Durante o curso, adquiri habilidades essenciais para projetar, desenvolver e implementar sistemas de software eficientes e funcionais.</p></br>
         <p>Com um enfoque prático e orientado a soluções, estou capacitado a analisar as necessidades dos usuários e traduzi-las em soluções tecnológicas eficientes. Tenho experiência no desenvolvimento de aplicações web.</p></br>
@@ -22,11 +22,26 @@ const ptBr = {
     ],
   },
   workExperience: {
-    title: 'EXPERIÊNCIA',
+    title: "EXPERIÊNCIA",
     experiences: [
       {
-        period: '2022 - Atualmente',
-        title: 'JOIN tecnologia',
+        period: "2023 - Atualmente",
+        title: "Codex Remote",
+        content: `
+        <p>No projeto Recooperar, desenvolvemos uma plataforma que melhora a gestão de áreas degradadas ou alteradas, facilitando a recuperação ou recomposição da vegetação nativa brasileira. Utilizei Vue.js para criar uma interface intuitiva e eficiente, permitindo que os usuários visualizem e gerenciem dados ambientais de forma integrada. O Recooperar está integrado à Plataforma de Análise e Monitoramento Geoespacial da Informação Ambiental (Pamgia), centralizando informações ambientais de interesse do Ibama e seus parceiros. Esta integração permite a visualização estatística e geoespacial dos dados temáticos, oferecendo transparência ativa e amplo acesso à informação disponível.</p></br>
+        <p>O Recooperar contribui para a restauração de áreas legalmente protegidas, como unidades de conservação, terras indígenas e assentamentos rurais, além de áreas degradadas em propriedades privadas, abrangendo todos os biomas brasileiros.</p></br>    
+        `,
+        links: [
+          { name: "Recooperar", link: "https://recooperar.ibama.gov.br/home" },
+          {
+            name: "Sobre",
+            link: "https://www.gov.br/secom/pt-br/assuntos/noticias/2024/04/nova-ferramenta-do-ibama-permite-criar-banco-de-dados-de-areas-degradadas-passiveis-de-recuperacao",
+          },
+        ],
+      },
+      {
+        period: "2022 - 2023",
+        title: "JOIN tecnologia",
         content: `
         <p>Como desenvolvedor de software com experiência em Vue.js e Vuetify, tenho participado de projetos significativos, como AlertaDis, Infohidro e Stormboard, em colaboração com o Simepar.</p></br>
         <p>No projeto AlertaDis, trabalhei no desenvolvimento de um sistema de alerta de desastres naturais, que tinha como objetivo fornecer informações em tempo real sobre eventos climáticos e outras situações de risco para a população. Desempenhei um papel fundamental na implementação da interface do usuário, criando componentes interativos e responsivos para facilitar a interação dos usuários com as informações de alerta.</p></br>
@@ -35,14 +50,14 @@ const ptBr = {
         <p>Minha experiência com Vue.js e Vuetify me capacitou a criar aplicações web modernas, com interfaces elegantes e funcionais. Tenho habilidades sólidas no desenvolvimento de componentes reutilizáveis, gerenciamento de estado com Vuex e integração de APIs para obter e exibir dados em tempo real. Sempre busco atualizar meu conhecimento e acompanhar as tendências mais recentes nessa área, a fim de entregar soluções tecnológicas de qualidade e impacto positivo.</p></br>
         `,
         links: [
-          {name: 'AlertaDis', link: 'https://alertadis.simepar.br/'},
-          {name: 'InfoHidro', link: 'https://infohidro.simepar.br/'},
-          {name: 'Stormboard', link: 'https://stormboard.simepar.br/Login'},
+          { name: "AlertaDis", link: "https://alertadis.simepar.br/" },
+          { name: "InfoHidro", link: "https://infohidro.simepar.br/" },
+          { name: "Stormboard", link: "https://stormboard.simepar.br/Login" },
         ],
       },
       {
-        period: '2020 - 2022',
-        title: 'CGI - Consultoria gaúcha de informática',
+        period: "2020 - 2022",
+        title: "CGI - Consultoria gaúcha de informática",
         content: `
         <p>Como desenvolvedor de software na CGI, tive a oportunidade de trabalhar no desenvolvimento de dois projetos importantes: Consultors, um sistema ERP empresarial, e AdmRH, uma solução para gestão de Recursos Humanos.</p></br>
         <p>No projeto Consultors, utilizei Vue.js e Vuetify para desenvolver interfaces de usuário intuitivas e funcionais. Colaborei com a equipe de desenvolvimento no desenvolvimento de módulos essenciais do sistema. Utilizei os recursos avançados do Vue.js, como componentes reutilizáveis e gerenciamento de estado com Vuex, para criar uma experiência de usuário eficiente e facilitar a interação com as diversas funcionalidades do sistema. Além disso, trabalhei em conjunto com a equipe de design para garantir que o layout e o design do sistema fossem atrativos e fáceis de usar.</p></br>
@@ -52,8 +67,8 @@ const ptBr = {
         `,
       },
       {
-        period: '2018 - 2020',
-        title: 'Aguilla desenhos',
+        period: "2018 - 2020",
+        title: "Aguilla desenhos",
         content: `
         <p>Como Projetista, desempenhei um papel fundamental no desenvolvimento de projetos de obras em estrutura metálica. Minhas principais atividades incluíram</p></br>
         <p>Estimar o tempo necessário para a modelagem 3D em obras durante a fase de orçamento, garantindo um planejamento eficiente e preciso;</p></br>
@@ -69,8 +84,8 @@ const ptBr = {
         `,
       },
       {
-        period: '2010 - 2018',
-        title: 'Projesul Engenharia',
+        period: "2010 - 2018",
+        title: "Projesul Engenharia",
         content: `
         <p>Como projetista de obras em estrutura metálica, minha atuação foi focada no uso de ferramentas como AutoCAD e Tecnometal para desenvolver projetos precisos e eficientes. Fui responsável por criar modelos 3D detalhados e desenhos técnicos de estruturas metálicas, seguindo as especificações e normas vigentes.</p></br>
         <p>Ao utilizar o AutoCAD, pude criar desenhos e representações técnicas detalhadas dos componentes estruturais, como vigas, pilares e conexões. Com isso, contribuí para garantir a precisão e a segurança das estruturas projetadas. Além disso, utilizei o Tecnometal, uma ferramenta específica para o projeto de estruturas metálicas, para otimizar e agilizar o processo de modelagem e detalhamento das peças.</p></br>
@@ -80,46 +95,48 @@ const ptBr = {
     ],
   },
   professionalSkills: {
-    title: 'HABILIDADES PROFISSIONAIS',
+    title: "HABILIDADES PROFISSIONAIS",
     skills: [
-      {name: 'VueJs', value: 90},
-      {name: 'Nuxt', value: 80},
-      {name: 'Vuetify', value: 90},
-      {name: 'React', value: 60},
-      {name: 'Next', value: 60},
-      {name: 'Javascript', value: 90},
-      {name: 'Typescript', value: 60},
-      {name: 'Git', value: 80},
-      {name: 'Leaflet', value: 90},
-      {name: 'OpenLayers', value: 90},
-      {name: 'Flutter', value: 25},
-      {name: 'Swift', value: 25},
+      { name: "VueJs" },
+      { name: "Nuxt" },
+      { name: "Vuetify" },
+      { name: "React" },
+      { name: "Next" },
+      { name: "Adonis Js" },
+      { name: "Javascript" },
+      { name: "Typescript" },
+      { name: "Git" },
+      { name: "Leaflet" },
+      { name: "OpenLayers" },
+      { name: "ArcGIS" },
+      { name: "Flutter" },
+      { name: "Swift" },
     ],
   },
   personalSkills: {
-    title: 'HABILIDADES PESSOAIS',
+    title: "HABILIDADES PESSOAIS",
     skills: [
-      {name: 'Comunicação', value: 100},
-      {name: 'Liderança', value: 90},
-      {name: 'Gestão de tempo', value: 90},
-      {name: 'Solução de problemas', value: 85},
-      {name: 'Flexibilidade', value: 100},
-      {name: 'Trabalho em equipe', value: 95},
-      {name: 'Atitude positiva', value: 80},
-      {name: 'Autoconfiança', value: 75},
-      {name: 'Planejamento', value: 80},
-      {name: 'Persistência', value: 80},
+      { name: "Comunicação" },
+      { name: "Liderança" },
+      { name: "Gestão de tempo" },
+      { name: "Solução de problemas" },
+      { name: "Flexibilidade" },
+      { name: "Trabalho em equipe" },
+      { name: "Atitude positiva" },
+      { name: "Autoconfiança" },
+      { name: "Planejamento" },
+      { name: "Persistência" },
     ],
   },
   contact: {
-    title: 'CONTATO',
+    title: "CONTATO",
     contacts: [
-      {name: 'Telefone', value: '+55 54 99968-5661', icon: 'mdi-phone'},
-      {name: 'Email', value: 'kyrllan@hotmail.com', icon: 'mdi-email'},
+      { name: "Telefone", value: "+55 54 99968-5661", icon: "mdi-phone" },
+      { name: "Email", value: "kyrllan@hotmail.com", icon: "mdi-email" },
       {
-        name: 'Endereço',
-        value: 'Irineu Ferlin, 256 - Marau/RS',
-        icon: 'mdi-home',
+        name: "Endereço",
+        value: "Marau/RS - BRASIL",
+        icon: "mdi-home",
       },
     ],
   },
