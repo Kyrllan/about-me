@@ -7,20 +7,6 @@ const ptBr = {
     <p>Após a graduação, optei por continuar trabalhando no escritório de engenharia, mas sempre busquei oportunidades para desenvolver projetos paralelos na área da tecnologia. Em 2019, surgiu uma oportunidade para ingressar em uma empresa de software como desenvolvedor front-end. Desde então, tenho me dedicado cada vez mais ao meu trabalho e fico fascinado com o impacto que ele gera na vida das pessoas.</p></br>
     `,
   },
-  education: {
-    title: "FORMAÇÃO E QUALIFICAÇÕES",
-    qualifications: [
-      {
-        period: "2012 - 2015",
-        title: "Universidade de Passo Fundo (UPF)",
-        content: `
-        <p>Formação em Análise e Desenvolvimento de Sistemas, com sólidos conhecimentos teóricos e práticos na área de tecnologia da informação. Durante o curso, adquiri habilidades essenciais para projetar, desenvolver e implementar sistemas de software eficientes e funcionais.</p></br>
-        <p>Com um enfoque prático e orientado a soluções, estou capacitado a analisar as necessidades dos usuários e traduzi-las em soluções tecnológicas eficientes. Tenho experiência no desenvolvimento de aplicações web.</p></br>
-        <p>Além disso, destaco minha habilidade em trabalhar em equipe, adaptabilidade a novas tecnologias e minha paixão por aprender e acompanhar as tendências do setor de tecnologia. Busco constantemente aprimorar minhas habilidades técnicas e contribuir para o sucesso dos projetos em que estou envolvido.</p></br>
-      `,
-      },
-    ],
-  },
   workExperience: {
     title: "EXPERIÊNCIA",
     experiences: [
@@ -28,8 +14,8 @@ const ptBr = {
         period: "2023 - Atualmente",
         title: "Codex Remote",
         content: `
-        <p>No projeto Recooperar, desenvolvemos uma plataforma que melhora a gestão de áreas degradadas ou alteradas, facilitando a recuperação ou recomposição da vegetação nativa brasileira. Utilizei Vue.js para criar uma interface intuitiva e eficiente, permitindo que os usuários visualizem e gerenciem dados ambientais de forma integrada. O Recooperar está integrado à Plataforma de Análise e Monitoramento Geoespacial da Informação Ambiental (Pamgia), centralizando informações ambientais de interesse do Ibama e seus parceiros. Esta integração permite a visualização estatística e geoespacial dos dados temáticos, oferecendo transparência ativa e amplo acesso à informação disponível.</p></br>
-        <p>O Recooperar contribui para a restauração de áreas legalmente protegidas, como unidades de conservação, terras indígenas e assentamentos rurais, além de áreas degradadas em propriedades privadas, abrangendo todos os biomas brasileiros.</p></br>    
+        <p>Recooperar é um sistema de gestão de áreas degradadas do IBAMA, desenvolvido em parceria com o Governo Federal, PAMGIA, ICMBio e Funai. O Recooperar é uma plataforma que melhora a gestão de áreas degradadas ou alteradas, facilitando a recuperação ou recomposição da vegetação nativa brasileira. Utilizei Vue.js para criar uma interface intuitiva e eficiente, permitindo que os usuários visualizem e gerenciem dados ambientais de forma integrada. O Recooperar está integrado à Plataforma de Análise e Monitoramento Geoespacial da Informação Ambiental (PAMGIA), centralizando informações ambientais de interesse do Ibama e seus parceiros. Esta integração permite a visualização estatística e geoespacial dos dados temáticos, oferecendo transparência ativa e amplo acesso à informação disponível.</p></br>
+        <p>O Recooperar contribui para a restauração de áreas legalmente protegidas, como unidades de conservação, terras indígenas e assentamentos rurais, além de áreas degradadas em propriedades privadas, abrangendo todos os biomas brasileiros.</p></br>
         `,
         links: [
           { name: "Recooperar", link: "https://recooperar.ibama.gov.br/home" },
@@ -91,6 +77,20 @@ const ptBr = {
         <p>Ao utilizar o AutoCAD, pude criar desenhos e representações técnicas detalhadas dos componentes estruturais, como vigas, pilares e conexões. Com isso, contribuí para garantir a precisão e a segurança das estruturas projetadas. Além disso, utilizei o Tecnometal, uma ferramenta específica para o projeto de estruturas metálicas, para otimizar e agilizar o processo de modelagem e detalhamento das peças.</p></br>
         <p>Durante meu trabalho como projetista, estimei o tempo necessário para a modelagem 3D de obras em fase de orçamento, preenchi fichas técnicas das obras, desenvolvi os modelos 3D de acordo com as informações recebidas e segui os padrões de qualidade estabelecidos pelos clientes e pela empresa. Também fui responsável pelo controle e organização das informações técnicas relacionadas às obras, assegurando que todas as informações indispensáveis para a montagem estivessem presentes nos desenhos e diagramas.</p></br>
         `,
+      },
+    ],
+  },
+  education: {
+    title: "FORMAÇÃO E QUALIFICAÇÕES",
+    qualifications: [
+      {
+        period: "2012 - 2015",
+        title: "Universidade de Passo Fundo (UPF)",
+        content: `
+        <p>Formação em Análise e Desenvolvimento de Sistemas, com sólidos conhecimentos teóricos e práticos na área de tecnologia da informação. Durante o curso, adquiri habilidades essenciais para projetar, desenvolver e implementar sistemas de software eficientes e funcionais.</p></br>
+        <p>Com um enfoque prático e orientado a soluções, estou capacitado a analisar as necessidades dos usuários e traduzi-las em soluções tecnológicas eficientes. Tenho experiência no desenvolvimento de aplicações web.</p></br>
+        <p>Além disso, destaco minha habilidade em trabalhar em equipe, adaptabilidade a novas tecnologias e minha paixão por aprender e acompanhar as tendências do setor de tecnologia. Busco constantemente aprimorar minhas habilidades técnicas e contribuir para o sucesso dos projetos em que estou envolvido.</p></br>
+      `,
       },
     ],
   },

@@ -108,18 +108,6 @@
               <div class="pt-2 content" v-html="language.about.content"></div>
             </template>
           </custom-section>
-          <custom-section class="pt-8" :title="language.education.title">
-            <template v-slot:content>
-              <date-section
-                class="pt-4"
-                v-for="(education, i) in language.education.qualifications"
-                :key="i"
-                :date="education.period"
-                :title="education.title"
-                :content="education.content"
-              ></date-section>
-            </template>
-          </custom-section>
           <custom-section class="pt-8" :title="language.workExperience.title">
             <template v-slot:content>
               <date-section
@@ -130,6 +118,18 @@
                 :title="experienses.title"
                 :content="experienses.content"
                 :links="experienses.links"
+              ></date-section>
+            </template>
+          </custom-section>
+          <custom-section class="pt-8" :title="language.education.title">
+            <template v-slot:content>
+              <date-section
+                class="pt-4"
+                v-for="(education, i) in language.education.qualifications"
+                :key="i"
+                :date="education.period"
+                :title="education.title"
+                :content="education.content"
               ></date-section>
             </template>
           </custom-section>
@@ -221,7 +221,6 @@ body {
     0 100%
   );
   background-color: rgb(var(--v-theme-secondary));
-  padding-left: 10rem;
 }
 
 .second-column {
@@ -235,7 +234,7 @@ body {
 
   .first-column {
     padding-left: 10rem;
-    padding-right: 1rem;
+    padding-right: 3rem;
   }
 
   .second-column {

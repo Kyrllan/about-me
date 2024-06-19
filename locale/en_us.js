@@ -7,20 +7,6 @@ const enUs = {
     <p>After graduation, I chose to continue working in the engineering office, but I was always looking for opportunities to develop parallel projects in the area of ​​technology. In 2019, an opportunity arose to join a software company as a front-end developer. Since then, I have devoted myself more and more to my work and I am fascinated by the impact it has on people's lives.</p></br>
     `,
   },
-  education: {
-    title: "EDUCATION AND QUALIFICATIONS",
-    qualifications: [
-      {
-        period: "2012 - 2015",
-        title: "Universidade de Passo Fundo (UPF)",
-        content: `
-        <p>Graduated in Systems Analysis and Development, with solid theoretical and practical knowledge in the area of ​​information technology. During the course, I acquired essential skills to design, develop and implement efficient and functional software systems.</p></br>
-        <p>With a practical and solution-oriented approach, I am able to analyze user needs and translate them into efficient technological solutions. I have experience in developing web applications.</p></br>
-        <p>In addition, I highlight my ability to work in a team, adaptability to new technologies and my passion for learning and keeping up with trends in the technology sector. I constantly seek to improve my technical skills and contribute to the success of the projects in which I am involved.</p></br>
-      `,
-      },
-    ],
-  },
   workExperience: {
     title: "WORKS EXPERIENCE",
     experiences: [
@@ -28,8 +14,8 @@ const enUs = {
         period: "2023 - at the moment",
         title: "Codex Remote",
         content: `
-        <p>In the Recooperar project, we developed a platform that improves the management of degraded or altered areas, facilitating the recovery or restoration of native Brazilian vegetation. I used Vue.js to create an intuitive and efficient interface, allowing users to visualize and manage environmental data in an integrated manner. Recooperar is integrated with the Geospatial Analysis and Environmental Information Monitoring Platform (Pamgia), centralizing environmental information of interest to Ibama and its partners. This integration allows the statistical and geospatial visualization of thematic data, offering active transparency and broad access to available information.</p></br>
-        <p>Recooperar contributes to the restoration of legally protected areas, such as conservation units, indigenous lands, and rural settlements, as well as degraded areas on private properties, encompassing all Brazilian biomes.</p></br>  
+        <p>Recooperar is a degraded area management system developed by IBAMA in partnership with the Federal Government, PAMGIA, ICMBio, and Funai. Recooperar is a platform that enhances the management of degraded or altered areas, facilitating the recovery or restoration of native Brazilian vegetation. I used Vue.js to create an intuitive and efficient interface, allowing users to visualize and manage environmental data in an integrated manner. Recooperar is integrated with the Geospatial Environmental Information Analysis and Monitoring Platform (PAMGIA), centralizing environmental information of interest to Ibama and its partners. This integration allows for statistical and geospatial visualization of thematic data, providing active transparency and broad access to available information.</p></br>
+        <p>Recooperar contributes to the restoration of legally protected areas, such as conservation units, indigenous lands, and rural settlements, as well as degraded areas on private properties, encompassing all Brazilian biomes.</p></br>
         `,
         links: [
           { name: "Recooperar", link: "https://recooperar.ibama.gov.br/home" },
@@ -91,6 +77,20 @@ const enUs = {
         <p>Using AutoCAD, I was able to create detailed technical drawings and representations of structural components such as beams, columns and connections. With this, I contributed to guarantee the precision and safety of the designed structures. In addition, I used Tecnometal, a specific tool for the design of metallic structures, to optimize and streamline the process of modeling and detailing the parts.</p></br>
         <p>During my work as a designer, I estimated the time needed for the 3D modeling of works in the budget phase, filled out technical sheets of the works, developed the 3D models according to the information received and followed the quality standards established by the clients and the company. I was also responsible for controlling and organizing the technical information related to the works, ensuring that all the essential information for assembly was present in the drawings and diagrams.</p></br>
         `,
+      },
+    ],
+  },
+  education: {
+    title: "EDUCATION AND QUALIFICATIONS",
+    qualifications: [
+      {
+        period: "2012 - 2015",
+        title: "Universidade de Passo Fundo (UPF)",
+        content: `
+        <p>Graduated in Systems Analysis and Development, with solid theoretical and practical knowledge in the area of ​​information technology. During the course, I acquired essential skills to design, develop and implement efficient and functional software systems.</p></br>
+        <p>With a practical and solution-oriented approach, I am able to analyze user needs and translate them into efficient technological solutions. I have experience in developing web applications.</p></br>
+        <p>In addition, I highlight my ability to work in a team, adaptability to new technologies and my passion for learning and keeping up with trends in the technology sector. I constantly seek to improve my technical skills and contribute to the success of the projects in which I am involved.</p></br>
+      `,
       },
     ],
   },
